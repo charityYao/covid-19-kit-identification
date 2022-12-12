@@ -1,6 +1,16 @@
 # Project Name
 A novel coronavirus antigen kit recognition method based on yolov5 and opencv
 
+# Intorduction
+```python
+miniprogram-1
+```
+In this directory, we put all the foreground code of wechat small program into it.
+```python
+model
+```
+In this directory,we put all the model code ,parameter files and the opencv code into it.we use the "yolo-opencv_detect.py" file to call the model which is trained  
+by our datasets.then the identification result of our model will be passed to the foreground.
 # Project Introduction
 
 Nucleic acid testing has become an essential part of people's lives in order to reduce the spread of the novel coronavirus,which has swept the world and has yet to be effectively treated and controlled. However, nucleic acid testing requires special testing machines and specialized laboratories, which are highly sensitive and usually take 4-6 hours to produce results. Therefore, nucleic acid testing is expensive and time-consuming. The novel coronavirus antigen self-testing kit has low cost,convenient and fast detection, which is favored by the market and effectively realizes home-based monitoring. Therefore, the industry has a good development prospect.  
