@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <image src="/images/hesuan.png" style="height: 350rpx;width: 100%;"></image>
+    <view class="t">
+      <text class="t1">检测说明</text>
+      <text>\n1.用户可选择拍照或者从本地上传图片进行检测</text>
+      <text class="t3">\n2.请选择清晰的照片进行检测,尽量减少背景的干扰</text>
+    </view>
+  </view>
+  <view class="body">
+    <view class="bt">
+      <button data-sourcetype="camera" type="primary" bindtap="chooseimage">
+        <image data-sourcetype="camera" src="/images/camera.png" mode="" style="height: 80rpx; width: 80rpx;" bindtap="chooseimage"/>
+        <text>拍照</text>
+      </button>
+    </view>
+    <view class="bt">
+      <button data-sourcetype="album" type="primary" bindtap="chooseimage">
+        <image data-sourcetype="album" src="/images/gallery.png" mode="" style="height: 80rpx; width: 80rpx;" bindtap="chooseimage"/>
+        <text>相册</text>
+      </button>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="img-exhibition">
+      <view class="img1">
+        <!-- <image src="/images/-check.jpg"></image> -->
+        <image src="{{tempFilePath1}}"></image>
+        <text style="text-align: center;">待检测图片</text>
+      </view>
+      <view class="img2">
+        <!-- <image src="/images/check.jpg"></image> -->
+        <image src="data:image/png;base64,{{tempFilePath2}}"></image>
+        <text>检测结果</text>
+      </view>
+    </view> 
+    <view class="result">
+      <text class="total">共{{s_num}}条试剂  </text>
+      <text class="qualifiedNum">  有效条数为{{v_num}}</text>
+    </view>
+    <view class="check">
+    <button type="primary" bindtap="check">点击检测</button>
+    </view>
+  </view>
+</view>
+ 
+ 
+
+
+

@@ -1,0 +1,14 @@
+<!--pages/history/history.wxml-->
+<view style="flex-direction:row;">
+  <block wx:for="{{history}}"wx:key="">
+        <view class="layout_horizontal">
+          <image src="data:image/png;base64,{{item.editimg}}"></image>
+          <view class="layout_vertical">
+            <text class="total">总试剂数量：{{item.s_num}}</text>
+            <text class="qualifiedNum">合格试剂数量：{{item.v_num}}</text>
+          </view>
+          <text class="detect_Date">{{item.now_date}}</text>
+        </view>
+        
+  </block>
+</view>

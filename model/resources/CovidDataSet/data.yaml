@@ -1,0 +1,7 @@
+train: ../CovidDataSet/train/images
+test: ../CovidDataSet/test/images
+val: ../CovidDataSet/valid/images
+# number of classes
+nc: 7
+# class names
+names: ["Test_Paper", "Paper_Area","Box","Box_Area","Kit","Kit_Area","C"]

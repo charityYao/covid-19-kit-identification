@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/test/test",
+    "pages/history/history",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#253",
+    "navigationBarTitleText": "核酸试纸检测",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "green",
+    "backgroundColor": "#f5f5f5",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [{
+    "pagePath": "pages/index/index",
+    "text": "首页",
+    "iconPath": "icon/-home.png",
+    "selectedIconPath": "icon/home.png",
+    "enablePullDownRefresh":true
+    },{
+    "pagePath": "pages/history/history",
+    "text": "历史记录",
+    "iconPath": "icon/-history.png",
+    "selectedIconPath": "icon/history.png",
+    "enablePullDownRefresh":true
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
