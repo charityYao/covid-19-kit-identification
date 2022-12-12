@@ -55,11 +55,14 @@ X2paddle = = 1.3.9
  
 # Testing
 ```python
-python detect.py  --weights runs/train/exp16/weights/best.pt --source ./CovidDataSet/test/image
+python detect.py  --weights runs/train/exp24/weights/best.pt --source ./CovidDataSet/test/image
 ```
 
 # Training
 ```python
 python train.py --img 640 --batch 8 --epochs 200 --data ./CovidDataSet/data.yaml --cfg models/yolov5x.yaml --weights weights/yolov5x.pt --cache ram
 ```
-
+# parameter
+The model was fine-tuned on the basis of Yolov 5x.pt, using our own collection of COVID-19 reagent pictures.  
+After the model is trained, change the best.pt format to best.onnx, and then use opencv to call. flask framework   
+is used to invoke the wechat small program that is exposed to the foreground by packaging the model as a background interface.  
