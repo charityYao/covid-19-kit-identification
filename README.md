@@ -62,7 +62,7 @@ python detect.py  --weights runs/train/exp24/weights/best.pt --source ./CovidDat
 ```python
 python train.py --img 640 --batch 8 --epochs 200 --data ./CovidDataSet/data.yaml --cfg models/yolov5x.yaml --weights weights/yolov5x.pt --cache ram
 ```
-# parameter
+# Parameter
 The model was fine-tuned on the basis of Yolov 5x.pt, using our own collection of COVID-19 reagent pictures.  
 After the model is trained, change the best.pt format to best.onnx, and then use opencv to call. flask framework   
 is used to invoke the wechat small program that is exposed to the foreground by packaging the model as a background interface.  
@@ -71,7 +71,7 @@ yolo-opencv_detect.py
 ```
 in this file,we use the opencv to call the model.
 
-# citation
+# Citation
 https://github.com/ultralytics/yolov5  
 https://github.com/opencv/opencv_zoo  
 
