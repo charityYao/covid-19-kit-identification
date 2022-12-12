@@ -72,8 +72,8 @@ yolo-opencv_detect.py
 in this file,we use the opencv to call the model.
 
 # citation
-https://github.com/ultralytics/yolov5
-https://github.com/opencv/opencv_zoo
+https://github.com/ultralytics/yolov5  
+https://github.com/opencv/opencv_zoo  
 
 # Contributors
  Yao wang ,Zhihao He , Qi Zhang ,Jiacheng Yang
